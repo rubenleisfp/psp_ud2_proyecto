@@ -21,13 +21,7 @@ public class BufferPedidos {
      * @throws InterruptedException si el hilo es interrumpido mientras espera
      */
     public synchronized void put(Pedido p) throws InterruptedException {
-        while (cola.size() >= capacidad) {
-            System.out.println(Thread.currentThread().getName() + " - Buffer lleno, esperando...");
-            wait();
-        }
-        cola.add(p);
-        System.out.println(Thread.currentThread().getName() + " - Añadido " + p + " (size=" + cola.size() + ")");
-        notifyAll();
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 
     /**
@@ -36,17 +30,10 @@ public class BufferPedidos {
      * @throws InterruptedException si el hilo es interrumpido mientras espera
      */
     public synchronized Pedido take() throws InterruptedException {
-        while (cola.isEmpty()) {
-            System.out.println(Thread.currentThread().getName() + " - Buffer vacío, esperando...");
-            wait();
-        }
-        Pedido p = cola.poll();
-        System.out.println(Thread.currentThread().getName() + " - Tomado " + p + " (size=" + cola.size() + ")");
-        notifyAll();
-        return p;
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 
     public synchronized int size() {
-        return cola.size();
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 }

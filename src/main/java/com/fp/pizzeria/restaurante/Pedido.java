@@ -9,8 +9,7 @@ public class Pedido {
     private final String descripcion;
 
     public Pedido(String descripcion) {
-        this.id = ++COUNTER;
-        this.descripcion = descripcion;
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 
     public int getId() {

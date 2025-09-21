@@ -16,8 +16,7 @@ public class VerificadorPedidosCallable implements Callable<Integer> {
     private final List<String> ingredientesProhibidos;
 
     public VerificadorPedidosCallable(List<Pedido> pedidos, List<String> ingredientesProhibidos) {
-        this.pedidos = pedidos;
-        this.ingredientesProhibidos = ingredientesProhibidos;
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 
     /**
@@ -27,20 +26,6 @@ public class VerificadorPedidosCallable implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        int validos = 0;
-        for (Pedido p : pedidos) {
-            boolean valido = true;
-            for (String ing : ingredientesProhibidos) {
-                if (p.getDescripcion().toLowerCase().contains(ing.toLowerCase())) {
-                    valido = false;
-                    break;
-                }
-            }
-            if (valido) {
-                validos++;
-            }
-        }
-        System.out.println(Thread.currentThread().getName() + " - Validados " + validos + " pedidos");
-        return validos;
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 }

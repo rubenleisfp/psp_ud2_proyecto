@@ -11,10 +11,7 @@ public class Cocinero implements Runnable {
     private final long tiempoPreparacion;
 
     public Cocinero(String nombre, BufferPedidos buffer, Horno horno, long tiempoPreparacion) {
-        this.nombre = nombre;
-        this.buffer = buffer;
-        this.horno = horno;
-        this.tiempoPreparacion = tiempoPreparacion;
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 
     /**
@@ -27,20 +24,6 @@ public class Cocinero implements Runnable {
      */
     @Override
     public void run() {
-        try {
-            for (int i = 0; i < 5; i++) {
-                // Simular preparación
-                System.out.println(nombre + " - Preparando pizza " + (i + 1));
-                Thread.sleep(tiempoPreparacion);
-                // Usar horno (recurso compartido)
-                horno.usarHorno(nombre, 2000);
-                Pedido p = new Pedido("Pizza de " + nombre + " #" + (i + 1));
-                buffer.put(p);
-            }
-            System.out.println(nombre + " - He terminado mis pedidos.");
-        } catch (InterruptedException e) {
-            System.out.println(nombre + " - Interrumpido.");
-            Thread.currentThread().interrupt();
-        }
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 }

@@ -16,8 +16,6 @@ public class Horno {
      * @throws InterruptedException si el hilo es interrumpido mientras se encuentra bloqueado
      */
     public synchronized void usarHorno(String quien, long tiempoMs) throws InterruptedException {
-        System.out.println(quien + " - Usando el horno...");
-        Thread.sleep(tiempoMs);
-        System.out.println(quien + " - Liberando el horno");
+        throw new UnsupportedOperationException("A implementar por el estudiante");
     }
 }
