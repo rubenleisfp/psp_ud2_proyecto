@@ -1,0 +1,89 @@
+C:\Users\Ruben\.jdks\openjdk-22.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=29012:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\DEV\SOURCE\FP_SOURCE\PSP\UD2\psp_ud2_proyecto\target\classes com.fp.pizzeria.restaurante.PizzeriaApp
+== PSP UD2 - Pizzería multihilo (starter) ==
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-1 - Preparando pizza 1
+Cocinero-2 - Preparando pizza 1
+Estado de Cocinero-1-thread: TIMED_WAITING
+Estado de Repartidor-1-thread: WAITING
+Cocinero-1 - Usando el horno...
+Cocinero-1 - Liberando el horno
+Cocinero-2 - Usando el horno...
+Cocinero-1-thread - Añadido Pedido{1: 'Pizza de Cocinero-1 #1'} (size=1)
+Cocinero-1 - Preparando pizza 2
+Repartidor-1-thread - Tomado Pedido{1: 'Pizza de Cocinero-1 #1'} (size=0)
+Repartidor-1 - Entregando Pedido{1: 'Pizza de Cocinero-1 #1'}
+Repartidor-1 - Entrega completada Pedido{1: 'Pizza de Cocinero-1 #1'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-2 - Liberando el horno
+Cocinero-1 - Usando el horno...
+Cocinero-2-thread - Añadido Pedido{2: 'Pizza de Cocinero-2 #1'} (size=1)
+Cocinero-2 - Preparando pizza 2
+Repartidor-1-thread - Tomado Pedido{2: 'Pizza de Cocinero-2 #1'} (size=0)
+Repartidor-1 - Entregando Pedido{2: 'Pizza de Cocinero-2 #1'}
+Repartidor-1 - Entrega completada Pedido{2: 'Pizza de Cocinero-2 #1'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-1 - Liberando el horno
+Cocinero-2 - Usando el horno...
+Cocinero-1-thread - Añadido Pedido{3: 'Pizza de Cocinero-1 #2'} (size=1)
+Cocinero-1 - Preparando pizza 3
+Repartidor-1-thread - Tomado Pedido{3: 'Pizza de Cocinero-1 #2'} (size=0)
+Repartidor-1 - Entregando Pedido{3: 'Pizza de Cocinero-1 #2'}
+Repartidor-1 - Entrega completada Pedido{3: 'Pizza de Cocinero-1 #2'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-2 - Liberando el horno
+Cocinero-1 - Usando el horno...
+Cocinero-2-thread - Añadido Pedido{4: 'Pizza de Cocinero-2 #2'} (size=1)
+Cocinero-2 - Preparando pizza 3
+Repartidor-1-thread - Tomado Pedido{4: 'Pizza de Cocinero-2 #2'} (size=0)
+Repartidor-1 - Entregando Pedido{4: 'Pizza de Cocinero-2 #2'}
+Repartidor-1 - Entrega completada Pedido{4: 'Pizza de Cocinero-2 #2'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-1 - Liberando el horno
+Cocinero-2 - Usando el horno...
+Cocinero-1-thread - Añadido Pedido{5: 'Pizza de Cocinero-1 #3'} (size=1)
+Cocinero-1 - Preparando pizza 4
+Repartidor-1-thread - Tomado Pedido{5: 'Pizza de Cocinero-1 #3'} (size=0)
+Repartidor-1 - Entregando Pedido{5: 'Pizza de Cocinero-1 #3'}
+Repartidor-1 - Entrega completada Pedido{5: 'Pizza de Cocinero-1 #3'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-2 - Liberando el horno
+Cocinero-1 - Usando el horno...
+Cocinero-2-thread - Añadido Pedido{6: 'Pizza de Cocinero-2 #3'} (size=1)
+Cocinero-2 - Preparando pizza 4
+Repartidor-1-thread - Tomado Pedido{6: 'Pizza de Cocinero-2 #3'} (size=0)
+Repartidor-1 - Entregando Pedido{6: 'Pizza de Cocinero-2 #3'}
+Repartidor-1 - Entrega completada Pedido{6: 'Pizza de Cocinero-2 #3'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-1 - Liberando el horno
+Cocinero-2 - Usando el horno...
+Cocinero-1-thread - Añadido Pedido{7: 'Pizza de Cocinero-1 #4'} (size=1)
+Cocinero-1 - Preparando pizza 5
+Repartidor-1-thread - Tomado Pedido{7: 'Pizza de Cocinero-1 #4'} (size=0)
+Repartidor-1 - Entregando Pedido{7: 'Pizza de Cocinero-1 #4'}
+Repartidor-1 - Entrega completada Pedido{7: 'Pizza de Cocinero-1 #4'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-2 - Liberando el horno
+Cocinero-1 - Usando el horno...
+Cocinero-2-thread - Añadido Pedido{8: 'Pizza de Cocinero-2 #4'} (size=1)
+Cocinero-2 - Preparando pizza 5
+Repartidor-1-thread - Tomado Pedido{8: 'Pizza de Cocinero-2 #4'} (size=0)
+Repartidor-1 - Entregando Pedido{8: 'Pizza de Cocinero-2 #4'}
+Repartidor-1 - Entrega completada Pedido{8: 'Pizza de Cocinero-2 #4'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-1 - Liberando el horno
+Cocinero-2 - Usando el horno...
+Cocinero-1-thread - Añadido Pedido{9: 'Pizza de Cocinero-1 #5'} (size=1)
+Repartidor-1-thread - Tomado Pedido{9: 'Pizza de Cocinero-1 #5'} (size=0)
+Repartidor-1 - Entregando Pedido{9: 'Pizza de Cocinero-1 #5'}
+Cocinero-1 - He terminado mis pedidos.
+Repartidor-1 - Entrega completada Pedido{9: 'Pizza de Cocinero-1 #5'}
+Repartidor-1-thread - Buffer vacío, esperando...
+Cocinero-2 - Liberando el horno
+Cocinero-2-thread - Añadido Pedido{10: 'Pizza de Cocinero-2 #5'} (size=1)
+Cocinero-2 - He terminado mis pedidos.
+Repartidor-1-thread - Tomado Pedido{10: 'Pizza de Cocinero-2 #5'} (size=0)
+Repartidor-1 - Entregando Pedido{10: 'Pizza de Cocinero-2 #5'}
+Repartidor-1 - Interrumpido y finalizando.
+Done!
+
+Process finished with exit code 0
