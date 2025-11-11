@@ -23,7 +23,7 @@ public class Cocinero implements Runnable {
      * Este Runnable representa un cocinero que prepara pizzas y las pone en un buffer
      * compartido. El cocinero utiliza un horno compartido para cocinar las pizzas.
      *
-     * Horneará 5 pizzas, el tiempo de horno de cada pizza es de 2000 ms.
+     * Horneará 5 pizzas, el tiempo de horno de cada pizzza se corresponderá con el tiempo de preparación
      * Una vez horneada la pizza crearán un pedido y lo guardarán en el BufferPedidos
      *
      * @throws InterruptedException si el hilo es interrumpido mientras que está esperando
