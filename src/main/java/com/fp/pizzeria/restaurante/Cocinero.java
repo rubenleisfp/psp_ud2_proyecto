@@ -42,8 +42,7 @@ public class Cocinero implements Runnable {
             }
             System.out.println(nombre + " - He terminado mis pedidos.");
         } catch (InterruptedException e) {
-            System.out.println(nombre + " - Interrumpido.");
-            Thread.currentThread().interrupt();
+            throw new RuntimeException(e);
         }
     }
 }
