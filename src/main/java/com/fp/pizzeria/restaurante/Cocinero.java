@@ -36,7 +36,7 @@ public class Cocinero implements Runnable {
                 System.out.println(nombre + " - Preparando pizza " + (i + 1));
                 Thread.sleep(tiempoPreparacion);
                 // Usar horno (recurso compartido)
-                horno.usarHorno(nombre, 2000);
+                horno.usarHorno(nombre, tiempoPreparacion);
                 Pedido p = new Pedido("Pizza de " + nombre + " #" + (i + 1));
                 buffer.put(p);
             }
